@@ -29,6 +29,22 @@
         .aviso { color: var(--red); font-weight: bold; text-align: center; margin-bottom: 10px; }
         .pauta { background: #fffec7; color: #92400e; padding: 10px; border-radius: 8px; text-align: center; margin-bottom: 10px; font-weight: bold; border: 1px solid #ffd700; }
     </style>
+    /* Diseño de la Licencia */
+        .licencia-bloque { 
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 300px; /* Deja espacio para el panel de control */
+            background: rgba(255, 255, 255, 0.9); 
+            color: #555; 
+            font-size: 12px; 
+            text-align: center; 
+            border-top: 1px solid #ddd; 
+            padding: 10px;
+            z-index: 100;
+            line-height: 1.4;
+        }
+        .licencia-bloque a { color: #007bff; text-decoration: none; font-weight: bold; }
 </head>
 <body>
 
@@ -250,5 +266,9 @@
         document.getElementById('p3res').value = data.final_val;
     }
 </script>
+    <div class="licencia-bloque">
+        Autor: <strong>EAG1964</strong> | 2026<br>
+        Esta obra está bajo una <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>
+    </div>
 </body>
 </html>
